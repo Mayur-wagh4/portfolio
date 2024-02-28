@@ -12,6 +12,12 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+.text-gradient {
+  background-image: linear-gradient(to right, #915eff, #ff6a6a); /* Define your gradient colors */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 .hash-span {
   margin-top: -100px;
