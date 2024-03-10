@@ -2,13 +2,13 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
+import { motion } from 'framer-motion';
 import React from 'react';
-import  {Tilt}  from 'react-tilt';
-import {motion, spring} from 'framer-motion';
-import {styles}from '../styles';
-import {services} from '../constants/constants';
-import{fadeIn,textVariant} from '../utils/motion';
+import { Tilt } from 'react-tilt';
+import { services } from '../constants/constants';
 import { SectionWrapper } from '../hoc';
+import { styles } from '../styles';
+import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -49,9 +49,7 @@ const About = () => {
   variants={fadeIn("","",0.1,1)}
   className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
   >
-I&apos;m Mayur Prakash Wagh, a MERN Stack Developer passionate about crafting innovative web solutions. Recently graduated in Computer Science, I specialize in React.js, Node.js, MongoDB, and Express.js, building dynamic and responsive web applications.
-🌐 MERN Stack & AWS Expertise:
-Specializing in the MERN (MongoDB, Express.js, React.js, Node.js) stack, I bring a comprehensive skill set to web development. Additionally, my hands-on experience includes expert deployment on AWS EC2, showcasing my ability to leverage cloud infrastructure for secure and scalable solutions.
+I&apos;m Mayur Prakash Wagh, a dedicated MERN Stack Developer driven by a passion for building cutting-edge web solutions. Armed with a recent degree in Computer Science, my expertise lies in React.js, Node.js, MongoDB, and Express.js, enabling me to create dynamic and responsive web applications. 🌐 MERN Stack & AWS Expertise: Specializing in the MERN (MongoDB, Express.js, React.js, Node.js) stack, I bring a wealth of experience to web development. Additionally, I possess hands-on proficiency in AWS EC2 deployment, showcasing my ability to harness cloud infrastructure for secure and scalable solutions.
   </motion.p>
   <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

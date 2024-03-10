@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-85 flex items-center rounded-full px-3 py-3 fixed top-3  right-1 left-1 z-20 bg-gray-900 backdrop-blur`}
+      className={`${styles.paddingX} w-85 flex items-center rounded-full px-1 py-1 fixed top-3  right-1 left-1 z-20  bg-slate-900 `}
     >
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
         <Link
@@ -42,14 +42,8 @@ const Navbar = () => {
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt="logo" className="w-13 h-10 object-contain" />
-          <p className="text-white text -[18px] font-bold cursor-pointer flex">
-            {" "}
-            MAYUR WAGH &nbsp;
-            <span className="sm:block hidden">| Web Developer</span>
-          </p>
+          }}>
+          <img src={logo} alt="logo" className="w-20 h-12 object-contain" />
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((Link) => (

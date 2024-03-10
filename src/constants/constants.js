@@ -17,19 +17,19 @@ import {
   export const navLinks = [
     {
       id: "about",
-      title: "About Me",
+      title: "Bio",
     },
     {
       id: "work",
-      title: "My Works",
+      title: "Artifact",
     },
     {
       id: "skill",
-      title: "My Skills",
+      title: "Expertise",
     },
     {
       id: "contact",
-      title: "My Contact",
+      title: "Let's Connect",
     },
 
   ];
@@ -99,11 +99,11 @@ import {
       date: "Nov 2023 - January 2024",
       points: [
         "Project I:Inventory Management System",
-        "Description: Developed an efficient inventory management system with Excel file integration.",
-        "Tech Used: React, Dropzone.",
+        "Description: Engineered an ingenious inventory management solution that revolutionized efficiency, seamlessly integrating Excel files for unparalleled performance.",
+        "Tech Used:React,Dropzone",
         "Features:",
-        "Implemented a user-friendly React frontend.",
-        "Enabled bulk data import from Excel files using Dropzone."
+        "Implemented a user-friendly React frontend for intuitive navigation.",
+        "Enabled bulk data import from Excel files using Dropzone for seamless integration"
       ],
     },
   
@@ -115,13 +115,10 @@ import {
       date: "December 2023 - Jan 2024",
       points: [
         "Project: GetToHire.com",
-        "Transformed the hiring process for restaurants, creating an innovative platform.",
-        "Bridged the gap between restaurants and skilled workers in the hospitality sector.",
-        "Utilized a robust tech stack:",
-        "MongoDB for database management.",
-        "Express for streamlined server-side development.",
-        "Node.js for efficient and scalable backend.",
-        "AWS for secure and scalable cloud infrastructure"
+        "Redefined the restaurant hiring landscape with my cutting-edge platform, streamlining processes and fostering connections between restaurants and top talent in the hospitality industry",
+        "Tech Used:Express,MongoDB,Node",
+        "Crafted three distinct dashboards: Admin, Restaurant, and Candidate. Candidates can seamlessly manage their profiles, while restaurant owners have the convenience of posting jobs and updating their profiles.",
+     " Additionally, the admin dashboard serves as a centralized hub, offering access to both restaurant and candidate management functionalities, ensuring smooth addition and oversight of both entities."
       ],
     },
     {
@@ -132,12 +129,12 @@ import {
       date: "Jan 2023 - Present",
       points: [
         "Project II:Web Scraping Application",
-        "Description: Crafted a web scraping application for data extraction and processing.",
+        "Description: Designed and developed a bespoke web scraping application focused on precise data extraction and processing.",
       "Tech Used: React, Axios, Cheerio.",
       "Features:",
-      "Utilized React for frontend development.",
-      "Incorporated Axios for efficient HTTP requests." ,
-      "Implemented Cheerio for web scraping capabilities."
+      "Employed React to craft engaging frontend experience",
+      "Axios for efficient HTTP requests handling, and" ,
+      "Cheerio for powerful web scraping functionalities"
       ],
     },
 
@@ -149,13 +146,13 @@ import {
       date: "December 2023 - Jan 2024",
       points: [
         "Project: Get4Grow.com",
-        "Transformed the hiring process for restaurants, creating an innovative platform.",
-        "Bridged the gap between restaurants and skilled workers in the hospitality sector.",
-        "Utilized a robust tech stack:",
-        "MongoDB for database management.",
-        "Express for streamlined server-side development.",
-        "Node.js for efficient and scalable backend.",
-        "AWS for secure and scalable cloud infrastructure"
+        "Designed a website focused on elevating restaurants to success stories through a range of specialized services.",
+        " By conducting thorough audits, they identify inefficiencies and enhance performance, enabling restaurants to thrive in today's competitive landscape.",
+        "Tech used:It boasts a dynamic frontend powered by React and styled with the elegance of Tailwind CSS.",
+        "Integrated EmailJS to efficiently collect email addresses from users and customers",
+
+
+
       ],
     },
   ];
@@ -173,8 +170,8 @@ import {
   const projects = [
     {
       name: "Get To Hire ",
-      description:
-      "Transformed hiring process for restaurants",
+      description:"Restaurant Hiring Platform",
+
       tags: [
         {
           name: "Express",
@@ -190,7 +187,7 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/Mayur-wagh4/JOBPORTAL1.git",
+      source_code_link: "https://github.com/Mayur-wagh4/",
       website_link:"https://gettohire.com/"
     },
     {
@@ -212,14 +209,15 @@ import {
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/Mayur-wagh4/MyPortfolio.git",
+      source_code_link: "https://github.com/Mayur-wagh4/",
+
       website_link:"https://gettohire.com/"
 
     },
     {
       name: "Get 4 Grow",
       description:
-        "A comprehensive travel booking platform tha",
+        "Restaurant Solutions Provider",
       tags: [
         {
           name: "React",
@@ -232,8 +230,9 @@ import {
        
       ],
       image: tripguide,
-      source_code_link: "https://github.com/Mayur-wagh4/get4grow.git",
-      website_link:"https://gettohire.com/"
+      source_code_link: "https://github.com/Mayur-wagh4/",
+
+      website_link:"https://get4grow.com/"
 
     },
   ];

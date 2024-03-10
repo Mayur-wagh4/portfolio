@@ -11,26 +11,28 @@ const SkillCard = ({ index, name, level }) => (
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
   >
-   <div className="bg-gray-200 w-full h-3 rounded-md">
-  <div
-    className={`h-full rounded-md ${
-      level === "beginner"
-        ? "bg-blue-500"
-        : level === "intermediate"
-        ? "bg-green-500"
-        : "bg-yellow-500"
-    }`}
-    style={{ width: level === "beginner" ? "40%" : level === "intermediate" ? "70%" : "100%" }}
-  ></div>
+    <div className="bg-gray-200 w-full h-3 rounded-md relative">
+      <div
+        className={`h-full rounded-md ${
+          level === "beginner"
+            ? "bg-blue-500"
+            : level === "intermediate"
+            ? "bg-green-500"
+            : "bg-yellow-500"
+        }`}
+        style={{ width: level === "beginner" ? "40%" : level === "intermediate" ? "70%" : "100%" }}
+      >
 
-
-      <p className="mt-3 text-white font-medium">
-  Level: {level.charAt(0).toUpperCase() + level.slice(1)}
-</p>
-
+      </div>
     </div>
+
+    {/* Render level text below the bar */}
+    <p className="mt-3 text-white font-medium text-center">
+{name}
+    </p>
   </motion.div>
 );
+
 
 const Skill = () => {
   return (

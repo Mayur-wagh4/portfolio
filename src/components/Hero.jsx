@@ -25,7 +25,6 @@ const Hero = () => {
               Mayur Wagh{""}
             </span>
             <br></br>
-            <span> I am </span>
             <TypeAnimation
               sequence={[
                 "A Front-End Developer.",

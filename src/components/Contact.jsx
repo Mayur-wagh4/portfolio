@@ -1,18 +1,13 @@
-import React from 'react';
-import { useState,useRef } from 'react';
-import {motion} from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import {styles} from '../styles';
-import {EarthCanvas} from './canvas';
-import{SectionWrapper }from '../hoc';
-import{slideIn} from '../utils/motion';
+import { motion } from 'framer-motion';
+import React, { useRef, useState } from 'react';
+import { SectionWrapper } from '../hoc';
+import { styles } from '../styles';
+import { slideIn } from '../utils/motion';
+import { EarthCanvas } from './canvas';
 
-
-
-//template_cqn04be
-//service_238b4y5
-// xjcwe3n0_deRDjvlT
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const formRef=useRef();
   const [form,setForm]=useState({
@@ -41,7 +36,7 @@ emailjs.send(
 'xjcwe3n0_deRDjvlT')
 .then(() => {
   setLoading(false);
-  alert("Thank you,I will get back to you ASAP.");
+  setIsSubmitted(true); 
   setForm({
     name:'',
     email:'',
@@ -61,8 +56,8 @@ emailjs.send(
       variants={slideIn('left',"tween",0.2,1)}
       className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-<p className={styles.sectionSubText}>Get in touch </p>
-<h3 className={styles.sectionHeadText}>Contact.</h3>
+<p className={styles.sectionSubText}></p>
+<h3 className={styles.sectionHeadText}>Let's Connect.</h3>
 <form
 ref={formRef}
 onSubmit={handlesubmit}
@@ -102,6 +97,11 @@ className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-
 </button>
 
 </form>
+{isSubmitted && (
+        <div className="mt-3 bg-green-200 text-green-800 px-4 py-2 rounded-md transition-opacity duration-300 opacity-100">
+          Your message has been successfully sent!
+        </div>
+      )}
       </motion.div>
       <motion.div
       variants={slideIn('right','tween',0.2,1)}
