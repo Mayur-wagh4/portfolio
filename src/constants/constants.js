@@ -96,7 +96,7 @@ import {
       company_name: "Jio Platforms Limited (JPL)",
       icon: "none",
       iconBg: "#383E56",
-      date: "Nov 2023 - January 2024",
+      date: "Nov 2023 - April 2024",
       points: [
         "Project I:Inventory Management System",
         "Description: Engineered an ingenious inventory management solution that revolutionized efficiency, seamlessly integrating Excel files for unparalleled performance.",
@@ -106,53 +106,18 @@ import {
         "Enabled bulk data import from Excel files using Dropzone for seamless integration"
       ],
     },
-  
-    {
-      title: "Freelance Web Developer",
-      company_name: "Get To Hire",
-      icon: "none",
-      iconBg: "#383E56",
-      date: "December 2023 - Jan 2024",
-      points: [
-        "Project: GetToHire.com",
-        "Redefined the restaurant hiring landscape with my cutting-edge platform, streamlining processes and fostering connections between restaurants and top talent in the hospitality industry",
-        "Tech Used:Express,MongoDB,Node",
-        "Crafted three distinct dashboards: Admin, Restaurant, and Candidate. Candidates can seamlessly manage their profiles, while restaurant owners have the convenience of posting jobs and updating their profiles.",
-     " Additionally, the admin dashboard serves as a centralized hub, offering access to both restaurant and candidate management functionalities, ensuring smooth addition and oversight of both entities."
-      ],
-    },
-    {
-      title: "Web Developer Intern",
-      company_name: "Jio Platforms Limited (JPL)",
-      icon:"none",
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Project II:Web Scraping Application",
-        "Description: Designed and developed a bespoke web scraping application focused on precise data extraction and processing.",
-      "Tech Used: React, Axios, Cheerio.",
-      "Features:",
-      "Employed React to craft engaging frontend experience",
-      "Axios for efficient HTTP requests handling, and" ,
-      "Cheerio for powerful web scraping functionalities"
-      ],
-    },
-
     {
       title: "Freelance Web Developer",
       company_name: "Get 4 Grow",
       icon: "none",
       iconBg: "#383E56",
-      date: "December 2023 - Jan 2024",
+      date: "April 2023 - October 2023",
       points: [
         "Project: Get4Grow.com",
         "Designed a website focused on elevating restaurants to success stories through a range of specialized services.",
         " By conducting thorough audits, they identify inefficiencies and enhance performance, enabling restaurants to thrive in today's competitive landscape.",
         "Tech used:It boasts a dynamic frontend powered by React and styled with the elegance of Tailwind CSS.",
         "Integrated EmailJS to efficiently collect email addresses from users and customers",
-
-
-
       ],
     },
   ];
