@@ -176,7 +176,7 @@ import {
       image: jobit,
       source_code_link: "https://github.com/Mayur-wagh4/",
 
-      website_link:"https://gettohire.com/"
+      website_link:"#"
 
     },
     {
@@ -197,7 +197,7 @@ import {
       image: tripguide,
       source_code_link: "https://github.com/Mayur-wagh4/",
 
-      website_link:"https://get4grow.com/"
+      website_link:"https://www.get4grow.com/"
 
     },
   ];

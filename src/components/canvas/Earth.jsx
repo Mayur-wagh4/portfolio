@@ -1,9 +1,8 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
-import {Suspense} from 'react';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls,Preload,useGLTF } from '@react-three/drei';
-import CanvasLoader from '../Loader'
+import { Suspense } from 'react';
 const Earth = () => {
 
   const earth=useGLTF('./planet/scene.gltf')
@@ -30,7 +29,7 @@ const EarthCanvas=()=>{
       position:[-4,-3,6]
     }}
     >
-      <Suspense fallback={<CanvasLoader/>}>
+      <Suspense >
         <OrbitControls
         autoRotate
         enableZoom={false}

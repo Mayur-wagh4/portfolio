@@ -1,7 +1,6 @@
+import { React, Suspense, useEffect, useState } from "react";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import React, { Suspense, useEffect, useState } from "react";
-
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
@@ -33,36 +32,37 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
+    // Define a function to update the `isMobile` state based on media query matches
+    const updateIsMobile = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    // Initial check for mobile devices
+    updateIsMobile(mediaQuery);
 
-    // Remove the listener when the component is unmounted
+    // Add event listener for changes to the media query
+    const mediaQueryListener = (event) => {
+      updateIsMobile(event);
+    };
+
+    mediaQuery.addEventListener("change", mediaQueryListener);
+
+    // Clean up event listener when component unmounts
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      mediaQuery.removeEventListener("change", mediaQueryListener);
     };
   }, []);
 
   return (
     <Canvas
-      frameloop='demand'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader />}
-      >
+      <Suspense >
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
@@ -70,7 +70,6 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
